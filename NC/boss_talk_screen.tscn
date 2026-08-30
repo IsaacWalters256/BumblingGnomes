@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddk5cqktv51ql"]
+
+[ext_resource type="Script" uid="uid://chw38fmig1qaf" path="res://NC/boss_talk_screen.gd" id="1_o2kau"]
+
+[node name="BossTalkScreen" type="Node2D"]
+script = ExtResource("1_o2kau")

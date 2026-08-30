@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://pti0kkc214nu"]
+
+[ext_resource type="Script" uid="uid://ycncpqf2kdwq" path="res://NC/main_menu.gd" id="1_24m6y"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_24m6y")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="NewGameButton" type="Button" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "New Game"
+
+[connection signal="pressed" from="VBoxContainer/MarginContainer/NewGameButton" to="." method="_on_new_game_button_pressed"]

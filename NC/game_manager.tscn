@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4nsja2jfdy4o"]
+[gd_scene load_steps=4 format=3 uid="uid://b4nsja2jfdy4o"]
 
+[ext_resource type="Script" uid="uid://bxs76w8c1noaq" path="res://NC/game_manager.gd" id="1_f5vru"]
 [ext_resource type="PackedScene" uid="uid://dexpb05o1ftrw" path="res://NC/basic_systems.tscn" id="1_xbq1l"]
 [ext_resource type="Texture2D" uid="uid://nvlogmtuim56" path="res://icon.svg" id="2_ti3l8"]
 
 [node name="GameManager" type="Node2D"]
+script = ExtResource("1_f5vru")
 
 [node name="BasicSystems" parent="." instance=ExtResource("1_xbq1l")]
 

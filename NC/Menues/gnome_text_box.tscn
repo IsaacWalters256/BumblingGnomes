@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4c4d7npa8128"]
+
+[ext_resource type="Script" uid="uid://c0gmaudc107c1" path="res://NC/Menues/gnome_text_box.gd" id="1_5hjk2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5hjk2"]
+bg_color = Color(0, 0, 0, 0.384314)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Theme" id="Theme_40a4p"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_5hjk2")
+
+[node name="GnomeTextBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5hjk2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="OptionalOptions" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Container" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_40a4p")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/Container"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Container/MarginContainer"]
+layout_mode = 2
+
+[node name="CharacterNameLabel" type="Label" parent="MarginContainer/VBoxContainer/Container/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Character Name"
+
+[node name="CharacterTextLabel" type="Label" parent="MarginContainer/VBoxContainer/Container/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "hell o thisi is  chacaca kjthek jdifal j"
