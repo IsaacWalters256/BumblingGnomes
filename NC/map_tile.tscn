@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://7s8vxwiwnuy2"]
+
+[ext_resource type="Script" uid="uid://csq11icexeiad" path="res://map_tile.gd" id="1_lxkbv"]
+[ext_resource type="Texture2D" uid="uid://ctcd8f7uymp4m" path="res://Art/Hexagon.png" id="2_td4w7"]
+
+[node name="MapTile" type="TextureButton"]
+offset_right = 8.0
+offset_bottom = 8.0
+texture_normal = ExtResource("2_td4w7")
+script = ExtResource("1_lxkbv")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

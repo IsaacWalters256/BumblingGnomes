@@ -13,17 +13,10 @@ border_color = Color(1, 1, 1, 1)
 [sub_resource type="Theme" id="Theme_40a4p"]
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_5hjk2")
 
-[node name="GnomeTextBox" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="GnomeTextBox" type="CanvasLayer"]
 script = ExtResource("1_5hjk2")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -57,8 +50,8 @@ layout_mode = 2
 
 [node name="CharacterNameLabel" type="Label" parent="MarginContainer/VBoxContainer/Container/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Character Name"
 
 [node name="CharacterTextLabel" type="Label" parent="MarginContainer/VBoxContainer/Container/MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "hell o thisi is  chacaca kjthek jdifal j"
+autowrap_mode = 2
+visible_characters = 0

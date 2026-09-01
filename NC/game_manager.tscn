@@ -10,8 +10,7 @@ script = ExtResource("1_f5vru")
 [node name="BasicSystems" parent="." instance=ExtResource("1_xbq1l")]
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(1058, 595.5)
-scale = Vector2(1.46875, 0.820313)
+position = Vector2(1088, 584)
 texture = ExtResource("2_ti3l8")
 
 [node name="Icon2" type="Sprite2D" parent="."]
