@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ctcd8f7uymp4m" path="res://Art/Hexagon.png" id="2_td4w7"]
 
 [node name="MapTile" type="TextureButton"]
+modulate = Color(1, 1, 1, 0.403922)
 offset_right = 8.0
 offset_bottom = 8.0
 texture_normal = ExtResource("2_td4w7")
