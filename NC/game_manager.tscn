@@ -16,3 +16,9 @@ texture = ExtResource("2_ti3l8")
 [node name="Icon2" type="Sprite2D" parent="."]
 position = Vector2(64, 64)
 texture = ExtResource("2_ti3l8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="CameraBasePoint" type="Node2D" parent="."]
+position = Vector2(576, 324)

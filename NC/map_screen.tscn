@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://cekh08i3j7pct"]
 
 [ext_resource type="Script" uid="uid://c14xoqubqs57w" path="res://NC/map_screen.gd" id="1_d3r6u"]
-[ext_resource type="PackedScene" uid="uid://c7y3v7iv0cauh" path="res://NC/Menues/map_sidebar.tscn" id="2_gyvwj"]
+[ext_resource type="PackedScene" uid="uid://b2q52hqmbheua" path="res://NC/Menues/gnome_select.tscn" id="3_013d1"]
 [ext_resource type="PackedScene" uid="uid://cqekkmf3q8efn" path="res://NC/Maps/map_0.tscn" id="3_gyvwj"]
 
 [node name="MapScreen" type="Node2D"]
 script = ExtResource("1_d3r6u")
 
-[node name="MapSidebar" parent="." instance=ExtResource("2_gyvwj")]
-
 [node name="Map0" parent="." instance=ExtResource("3_gyvwj")]
+
+[node name="GnomeSelect" parent="." instance=ExtResource("3_013d1")]
+visible = false

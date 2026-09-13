@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwrt7ordrwbgq"]
+
+[ext_resource type="Script" uid="uid://cc15a5ahbey6h" path="res://NC/Menues/gnome_checker.gd" id="1_lrnnt"]
+[ext_resource type="Texture2D" uid="uid://ctcd8f7uymp4m" path="res://Art/Hexagon.png" id="2_jqdrb"]
+[ext_resource type="Texture2D" uid="uid://nvlogmtuim56" path="res://icon.svg" id="3_jqdrb"]
+
+[node name="GnomeChecker" type="BoxContainer"]
+offset_right = 235.0
+offset_bottom = 104.0
+script = ExtResource("1_lrnnt")
+
+[node name="Hbox" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Hbox"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_jqdrb")
+texture_pressed = ExtResource("3_jqdrb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Hbox"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Hbox/VBoxContainer"]
+layout_mode = 2
+text = "Gnome Name"
+
+[node name="Class" type="Label" parent="Hbox/VBoxContainer"]
+layout_mode = 2
+text = "Class"
+
+[node name="CurrentLocation" type="Label" parent="Hbox/VBoxContainer"]
+layout_mode = 2
+text = "Current Location"
+
+[node name="Item" type="Label" parent="Hbox/VBoxContainer"]
+layout_mode = 2
+text = "Item"
+
+[node name="Age" type="Label" parent="Hbox/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "33"
+
+[connection signal="toggled" from="Hbox/TextureButton" to="." method="_on_texture_button_toggled"]

@@ -28,7 +28,7 @@ func start(extras):
 	map_view = load("res://NC/map_screen.tscn").instantiate()
 	self.add_child(map_view)
 	map_view.visible = false
-	map_view.start("map data")
+	map_view.start("map data",get_node("Camera2D"))
 	
 	#load boss starting speech screen
 	switch_current_screen("boss_talk_intro")
@@ -38,11 +38,13 @@ func switch_current_screen(type):
 	current_screen = null
 	interview_view.visible = false
 	map_view.visible = false
+	print(type)
 	if type == "boss_talk_intro":
 		interview_view.new_inst("boss_talk_intro")
 		interview_view.visible = true
 		current_screen = interview_view
 	elif type == "main_map":
+		print("d")
 		map_view.new_inst()
 		map_view.visible = true
 		current_screen = map_view

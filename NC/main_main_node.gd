@@ -3,7 +3,7 @@ extends Node
 var current_child = null
 
 func _ready():
-	change_screens("main_menu")
+	change_screens("start_game",[1])#"main_menu")
 
 func change_screens(which,extras=[]):
 	var new_child = null
